@@ -13,5 +13,7 @@ function writePassword() {
 
 }
 
+//Write if and else statements
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
