@@ -1,7 +1,6 @@
 // Assignment code here
 
-// Get references to the #generate element
-// var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxy1234567890!#$%&'()*+,-./:;<=>?@\^_`{|}~ "
+//list all the variables 
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "1234567890";
@@ -70,17 +69,14 @@ function writePassword() {
     return writePassword();
   }
 
-
+  //Add for loop function
   for (var i = 0; i < passwordLength; i++) {
     results = results + passwordText.charAt(Math.floor(Math.random() * Math.floor(passwordText.length - 1)));
   }
   results = results.substring(0, passwordLength);
-  // console.log(results);
   var passwordText = document.querySelector("#password");
   passwordText.value = results;
-
 };
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
